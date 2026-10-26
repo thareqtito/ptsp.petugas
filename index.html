@@ -123,6 +123,17 @@ form.absen textarea{min-height:160px;resize:vertical;}
 .submit-btn{background:linear-gradient(150deg,var(--red),var(--navy));color:#fff;border:none;padding:14px;border-radius:10px;font-weight:800;font-size:15px;cursor:pointer;margin-top:4px;}
 #toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:linear-gradient(150deg,var(--red),var(--navy));color:#fff;padding:12px 22px;border-radius:999px;font-size:14px;font-weight:700;box-shadow:0 8px 20px rgba(0,0,0,.3);z-index:99;transition:opacity .3s;}
 #toast.hidden{opacity:0;pointer-events:none;}
+
+/* Mode Petugas: menu burgundy gradasi + bingkai emas */
+.tile{background:linear-gradient(150deg,var(--red),var(--navy));-webkit-backdrop-filter:none;backdrop-filter:none;border:3px solid var(--gold);box-shadow:0 5px 16px rgba(90,15,31,.35);color:#fff;}
+.tile .label{color:#fff;}
+.tile .icon-wrap{background:rgba(255,255,255,.92);}
+.tile-arrow{background:var(--gold);color:var(--navy);box-shadow:0 0 0 3px rgba(255,255,255,.85);}
+.tile:hover,.tile:focus-visible{box-shadow:0 12px 26px rgba(90,15,31,.5);outline:3px solid #fff;}
+.subtile{background:linear-gradient(150deg,var(--red),var(--navy));border:3px solid var(--gold);border-top-width:3px;color:#fff;}
+.subtile .go{color:#f6dfe3;opacity:1;}
+.subtile:hover,.subtile:focus-visible{outline:3px solid #fff;}
+.subtile.disabled{filter:grayscale(.5);}
 </style>
 </head>
 <body>
