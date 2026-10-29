@@ -170,8 +170,8 @@ const SERVICES = [
     {label:'Tanggapan Masyarakat PDPB', url:'#', view:'tangmas'},
     {label:'WA Bot Pemilih', url:'https://s.id/dptpacitan', view:'wabot'},
     {label:'WA Center Data Pemilih', url:'https://wa.me/+621111111111'},
-    {label:'Surat Keterangan Pemilih Pergantian Antar Waktu (PAW)', url:'https://thareqtito.github.io/cekpawpacitan/'},
-    {label:'Permintaan Data Pemilih', url:'https://script.google.com/macros/s/AKfycbzEigA56wAaBuf2LUd3eHmzKLerzr2C3m7DmsYiP6AD038iFbHgT3kt_PU_vS554jQYhQ/exec'},
+    {label:'Surat Tanda Bukti Terdaftar Sebagai Pemilih', url:'https://thareqtito.github.io/suketpemilih/'},
+    {label:'Permintaan Data Pemilih', url:'https://thareqtito.github.io/exportpdpb/'},
     {label:'Model-A Daftar Pemilih Pemilu 2024', url:'https://drive.google.com/drive/folders/1F8zWVj4euv84H4GE55p3AONGMVa6Gn3o'},
     {label:'Model-A Daftar Pemilih Pilkada 2024', url:'https://drive.google.com/drive/folders/133r4fgUoWLr218QpaxMntBOf49yjwfUY'},
  ]},
@@ -234,7 +234,7 @@ function iconForItem(it){
   if(u.includes('jdih')) return '⚖️';
   if(u.includes('mycloud')) return '📁';
   if(u.includes('cekdptonline')) return '🔎';
-  if(it.label && it.label.toLowerCase().includes('pergantian antar waktu')) return '🪪';
+  if(it.label && it.label.toLowerCase().includes('bukti terdaftar')) return '🪪';
   if(it.label && it.label.toLowerCase().includes('permintaan data')) return '🗂️';
   return '🔗';
 }
